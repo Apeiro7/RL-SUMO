@@ -150,6 +150,8 @@ sumo -c configuration.sumocfg --lanechange-output my_lane_change_file.xml
 sumo -c configuration.sumocfg --vtk-output my_vkt_file.xml
 ```
 
+## QL Graph
+![QL Graph](ql/notes/maps/Figure_3.png)
 
 ### Credits: 
 1. Amit Bhardwaj<br/>

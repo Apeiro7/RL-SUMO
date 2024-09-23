@@ -89,6 +89,6 @@ Warning!!! takes a lot of time to accomplish this task and the file size is very
 
 ### Credits: 
 1. Amit Bhardwaj<br/>
-`Guru Ghasidas UniversityGuru Ghasidas University`<br/>
-`Bachelor of Technology - BTech, Computer Science and EngineeringBachelor of Technology - BTech, Computer Science and Engineering`<br/>
+`SOS E&T Guru Ghasidas University`<br/>
+`Bachelor of Technology - Computer Science and Engineering`<br/>
 `2021 - 2025`

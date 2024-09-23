@@ -4,7 +4,48 @@
 
 you need to download SUMO GUI for running simulations.
 
+# SUMO Installation Guide
+
 download sumo gui from [here](https://sumo.dlr.de/docs/Downloads.php)
+
+
+This guide will help you install the SUMO (Simulation of Urban MObility) traffic simulator on both Linux (Ubuntu/Debian-based) and macOS.
+
+## Linux (Ubuntu/Debian-based)
+
+1. **Add the SUMO repository**:
+    ```bash
+    sudo add-apt-repository ppa:sumo/stable
+    ```
+
+2. **Update your package list**:
+    ```bash
+    sudo apt-get update
+    ```
+
+3. **Install SUMO**:
+    ```bash
+    sudo apt-get install sumo sumo-tools sumo-doc
+    ```
+
+## Mac (using Homebrew)
+
+1. **Install Homebrew** (if not already installed):
+    ```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+
+2. **Install SUMO**:
+    ```bash
+    brew install sumo
+    ```
+
+## Verifying Installation
+
+After installation, verify that SUMO is installed correctly by typing the following command in your terminal:
+
+```bash
+sumo
 
 ### Step1: create network and route file
 

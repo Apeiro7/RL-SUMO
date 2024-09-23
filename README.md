@@ -151,7 +151,7 @@ sumo -c configuration.sumocfg --vtk-output my_vkt_file.xml
 ```
 
 ## QL Graph
-![QL Graph](ql/notes/maps/Figure_3.png)
+![QL Graph](ql/maps/Figure_3.png)
 
 ### Credits: 
 1. Amit Bhardwaj<br/>

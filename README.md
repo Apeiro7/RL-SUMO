@@ -47,7 +47,8 @@ After installation, verify that SUMO is installed correctly by typing the follow
 ```bash
 sumo
 
-### Step1: create network and route file
+
+## Step1: create network and route file
 
 Use SUMO netedit tool to create a network<br/>
 for example 'network.net.xml' and save it in the maps folder.

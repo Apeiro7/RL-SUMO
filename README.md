@@ -66,16 +66,20 @@ This will create a routes.rou.xml file for 500 simulation steps for the network 
 You need to provide network and route files to the Configuration file.<br/>
 change net-file and route-files in input.
 
-`<input>`        
-  `<net-file value='maps/city1.net.xml'/>`
-  `<route-files value='maps/city1.rou.xml'/>`
-`</input>`
+```bash
+<input>        
+  <net-file value='maps/city1.net.xml'/>
+  <route-files value='maps/city1.rou.xml'/>
+</input>
+```
 
 ### Step3: Train the model.
 
 Now use the train.py file to train a model for this network.<br/>
 
-```bash python train.py --train -e 50 -m model_name -s 500```
+```bash
+python train.py --train -e 50 -m model_name -s 500
+```
 
 This code will train the model for 50 epochs.<br/>
 -e is to set the epochs.<br/>
@@ -89,7 +93,9 @@ At the end of the simulation, it will show time_vs_epoch graphs and save them to
 
 You can use train.py to run a pre-trained model on GUI.
 
-```bash python train.py -m model_name -s 500```
+```bash
+python train.py -m model_name -s 500
+```
 
 This will open GUI which you can run to see how your model performs.
 To get accurate results set a value of -s the same for testing and training.
@@ -100,35 +106,49 @@ More than one cross road will return an error.<br/>
 
 For running Arduino for testing use --ard.
 
-```bash python train.py -m model_name -s 500 --ard```
+```bash
+python train.py -m model_name -s 500 --ard
+```
 
 ### DATA extraction
 
 0) Sumo Floating Car Data (FCD) Trace File<br/>
 
-```bash sumo -c configuration.sumocfg --fcd-output sumoTrace.xml```
+```bash
+sumo -c configuration.sumocfg --fcd-output sumoTrace.xml
+```
 
 1) Raw vehicle positions dump: <br/>
 
-```bash sumo -c configuration.sumocfg --netstate-dump my_dump_file.xml```
+```bash
+sumo -c configuration.sumocfg --netstate-dump my_dump_file.xml
+```
 
 2) Emission Output: Amount of CO2, CO, HC, NOX, fuel, electricity, noise, emitted by the vehicle in the actual simulation step<br/>
 
-```bash sumo -c configuration.sumocfg --emission-output my_emission_file.xml```
+```bash
+sumo -c configuration.sumocfg --emission-output my_emission_file.xml
+```
 
 3) Full Output: 
 dump every information contained in the network, including emission, position, speed, lane. 
 Warning!!! takes a lot of time to accomplish this task and the file size is very big (~GB) <br/>
 
-```bash sumo -c configuration.sumocfg --full-output my_full_output.xml```
+```bash
+sumo -c configuration.sumocfg --full-output my_full_output.xml
+```
 
 4) SUMO Lane change Output<br/>
 
-```bash sumo -c configuration.sumocfg --lanechange-output my_lane_change_file.xml```
+```bash
+sumo -c configuration.sumocfg --lanechange-output my_lane_change_file.xml
+```
 
 5) SUMO VTK Output<br/>
 
-```bash sumo -c configuration.sumocfg --vtk-output my_vkt_file.xml```
+```bash
+sumo -c configuration.sumocfg --vtk-output my_vkt_file.xml
+```
 
 
 ### Credits: 

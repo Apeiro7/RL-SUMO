@@ -55,7 +55,9 @@ for example 'network.net.xml' and save it in the maps folder.
 
 cd into maps folder and run the following command
 
-```bash python randomTrips.py -n network.net.xml -r routes.rou.xml -e 500```
+```bash
+python randomTrips.py -n network.net.xml -r routes.rou.xml -e 500
+```
 
 This will create a routes.rou.xml file for 500 simulation steps for the network "network.net.xml"
 

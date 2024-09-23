@@ -45,9 +45,8 @@ This guide will help you install the SUMO (Simulation of Urban MObility) traffic
 After installation, verify that SUMO is installed correctly by typing the following command in your terminal:
 
 ```bash
-
-
 sumo
+```
 
 ## Step1: create network and route file
 

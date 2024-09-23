@@ -4,7 +4,7 @@
 
 you need to download SUMO GUI for running simulations.
 
-# SUMO Installation Guide
+## SUMO Installation Guide
 
 download sumo gui from [here](https://sumo.dlr.de/docs/Downloads.php)
 
